@@ -1,92 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <nav>
-    <a href="index.html">Головна</a> |
-    <a href="info.html">Інформація</a>
-</nav>
+<header>
+    <h1>Курс HTML для початківців</h1>
+    <nav aria-label="Головна навігація">
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="lessons.html">Розклад занять</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
+</header>
 
-<h1>Нью-Йорк</h1>
+<main>
+    <section>
+        <h2>Про курс</h2>
+        <!-- Тут браузер шукає файл image_6.png у тій самій папці -->
+        <img src="image_6.png" alt="Студенти в академічних шапках під час святкового заходу з блакитно-жовтим димом" width="500">
+        <p>На курсі ви навчитеся створювати вебсторінки.</p>
+    </section>
 
-<h2>Місто моєї мрії</h2>
-
-<p>
-    Нью-Йорк — одне з найвідоміших міст світу.
-    Я хочу відвідати його через цікаву архітектуру,
-    відомі пам'ятки та особливу атмосферу.
-</p>
-
-<p>
-    Особливо я хочу побачити <strong>Статую Свободи</strong>
-    та прогулятися вулицями Манхеттена.
-    <br>
-    Це була б незабутня подорож.
-</p>
-
-<p>
-    <strong>Важлива інформація:</strong>
-    Нью-Йорк є одним із найбільших міст США.
-    <em>Це місто ніколи не спить.</em>
-</p>
-
-<hr>
-
-<h2>Відомі пам'ятки</h2>
-
-<ul>
-    <li>Статуя Свободи</li>
-    <li>Центральний парк</li>
-    <li>Таймс-сквер</li>
-    <li>Емпайр-Стейт-Білдінг</li>
-</ul>
-
-<h3 id="reasons">Чому я хочу відвідати Нью-Йорк?</h3>
-
-<ol>
-    <li>Хочу побачити відомі пам'ятки.</li>
-    <li>Хочу познайомитися з культурою міста.</li>
-    <li>Хочу отримати нові враження.</li>
-</ol>
-
-<hr>
-
-<div>
-    <h2>Додаткова інформація</h2>
-
-    <p>
-        На другій сторінці можна знайти додаткову
-        інформацію про Нью-Йорк.
-    </p>
-
-    <button>
-        <a href="info.html">Перейти до інформації</a>
-    </button>
-</div>
-
-<hr>
-
-<figure>
-    <img src="images/image.jpg"
-         alt="Панорама Нью-Йорка"
-         width="500">
-    <figcaption>Панорама Нью-Йорка</figcaption>
-</figure>
-
-<p>
-    <a href="https://www.nyc.gov/" target="_blank">
-        Офіційний сайт Нью-Йорка
-    </a>
-</p>
-
-<p>
-    <a href="#reasons">
-        Перейти до причин відвідати місто
-    </a>
-</p>
-</body>
-</html>
+    <section>
+        <h2>Реєстрація</h2>
+        <form>
+            <div>
+                <label for="username">Ім'я:</label><br>
+                <input type="text" id="username" name="username">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email">
+            </div>
+            <br>
+            <button type="submit">Зареєструватися</button>
+        </form>
+    </section>
+</main>
