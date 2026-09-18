@@ -1,36 +1,61 @@
-<header>
-    <h1>Курс HTML для початківців</h1>
-    <nav aria-label="Головна навігація">
-        <ul>
-            <li><a href="index.html">Головна</a></li>
-            <li><a href="lessons.html">Розклад занять</a></li>
-            <li><a href="contacts.html">Контакти</a></li>
-        </ul>
-    </nav>
-</header>
+<h1>Розклад занять</h1>
 
-<main>
-    <section>
-        <h2>Про курс</h2>
-        <!-- Тут браузер шукає файл image_6.png у тій самій папці -->
-        <img src="image_6.png" alt="Студенти в академічних шапках під час святкового заходу з блакитно-жовтим димом" width="500">
-        <p>На курсі ви навчитеся створювати вебсторінки.</p>
-    </section>
+<table border="1" cellspacing="0" cellpadding="5">
+    <!-- Верхня частина із заголовками -->
+    <thead>
+        <!-- Спільний заголовок для кількох стовпців -->
+        <tr>
+            <th colspan="5">Інформація про заняття</th>
+        </tr>
+        <tr>
+            <th>День тижня</th>
+            <th>Номер пари</th>
+            <th>Час</th>
+            <th>Предмет</th>
+            <th>Кабінет</th>
+        </tr>
+    </thead>
 
-    <section>
-        <h2>Реєстрація</h2>
-        <form>
-            <div>
-                <label for="username">Ім'я:</label><br>
-                <input type="text" id="username" name="username">
-            </div>
-            <br>
-            <div>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email">
-            </div>
-            <br>
-            <button type="submit">Зареєструватися</button>
-        </form>
-    </section>
-</main>
+    <!-- Основна частина з даними (не менше 5 занять) -->
+    <tbody>
+        <tr>
+            <td rowspan="2">Понеділок</td>
+            <td>1</td>
+            <td>8:30 - 9:50</td>
+            <td>Вища математика</td>
+            <td>Л-201</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>10:00 - 11:20</td>
+            <td>Історія України</td>
+            <td>А-305</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Вівторок</td>
+            <td>1</td>
+            <td>8:30 - 9:50</td>
+            <td>Програмування</td>
+            <td>К-102</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>10:00 - 11:20</td>
+            <td>Фізика</td>
+            <td>Ф-404</td>
+        </tr>
+        <tr>
+            <td>Середа</td>
+            <td>3</td>
+            <td>11:40 - 13:00</td>
+            <td>Іноземна мова</td>
+            <td>Б-501</td>
+        </tr>
+    </tbody>
+
+    <!-- Підсумковий рядок -->
+    <tfoot>
+        <tr>
+            <td colspan="5">Всього занять: 5</td>
+        </tr>
+    </tfoot></table>
