@@ -1,0 +1,76 @@
+<!-- Навігаційне меню (для sticky та z-index) -->
+<nav class="menu">
+    <a href="#home">Головна</a>
+    <a href="#products">Товари</a>
+    <a href="#contacts">Контакти</a>
+</nav>
+
+<!-- Заголовок сайту -->
+<header id="home">
+    <h1>Tech Store</h1>
+</header>
+
+<main id="products">
+    <h2>Популярні товари</h2>
+
+    <!-- Картка товару 1 (relative + absolute для знижки) -->
+    <div class="product">
+        <span class="discount">-20%</span>
+        <h2>Ноутбук</h2>
+        <p>Ноутбук для навчання і роботи.</p>
+        <p class="price">25 000 грн</p>
+    </div>
+
+    <!-- Картка товару 2 (Смартфон) -->
+    <div class="product">
+        <span class="discount">-15%</span>
+        <h2>Смартфон</h2>
+        <p>Потужний смартфон з якісною камерою.</p>
+        <p class="price">15 000 грн</p>
+    </div>
+
+    <!-- Картка товару 3 (Навушники) -->
+    <div class="product">
+        <span class="discount">-10%</span>
+        <h2>Навушники</h2>
+        <p>Бездротові навушники для музики та дзвінків.</p>
+        <p class="price">3 500 грн</p>
+    </div>
+
+    <!-- Завдання: Кнопка поверх зображення (banner) -->
+    <h2>Банер з кнопкою (absolute у relative)</h2>
+    <div class="banner">
+        <img src="https://picsum.photos/500/300" alt="Реклама">
+        <button class="banner-button">Детальніше</button>
+    </div>
+
+    <!-- Демонстрація position: static -->
+    <h2>Демонстрація position: static</h2>
+    <div class="static-box">Перший блок</div>
+    <div class="static-box">Другий блок</div>
+    <div class="static-box">Третій блок</div>
+
+    <!-- Демонстрація position: relative -->
+    <h2>Демонстрація position: relative</h2>
+    <div class="relative-box">
+        Цей блок зміщений
+    </div>
+
+    <!-- Демонстрація накладання елементів (z-index) -->
+    <h2>Демонстрація накладання (z-index)</h2>
+    <div class="layers">
+        <div class="box1">Блок 1</div>
+        <div class="box2">Блок 2</div>
+    </div>
+
+    <!-- Додатковий текст для перевірки прокрутки (sticky та fixed) -->
+    <p>Додатковий текст сторінки...</p>
+    <p>Додатковий текст сторінки...</p>
+    <p>Додатковий текст сторінки...</p>
+    <p>Додатковий текст сторінки...</p>
+    <p>Додатковий текст сторінки...</p>
+    <p>Додатковий текст сторінки...</p>
+</main>
+
+<!-- Кнопка «Допомога» (fixed позиціювання) -->
+<button class="help">Допомога</button>

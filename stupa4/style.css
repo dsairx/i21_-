@@ -1,0 +1,158 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 2000px; /* Зроблено довгим для тестування скролу */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Завдання 6 & 7: Навігаційне меню (position: sticky) */
+.menu {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 100; /* Перекриває інші елементи під час прокрутки */
+}
+
+.menu a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Завдання 1: position: static */
+.static-box {
+    position: static; /* Стандартне положення за потоком */
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    background-color: #f9f9f9;
+}
+/* Примітка до завдання 1: Для position: static властивості top/left не працюють! */
+
+/* Завдання 2 & 3: position: relative */
+.relative-box {
+    position: relative;
+    top: 20px;  /* Зміщення відносно власної позиції вниз */
+    left: 40px; /* Зміщення вправо */
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    background-color: #e6f2ff;
+}
+
+/* Завдання 3, 4 & 5: Картки товарів (relative + absolute) */
+.product {
+    position: relative; /* Батьківський елемент для абсолютної позначки знижки */
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+}
+
+.discount {
+    position: absolute; /* Позиціюється всередині .product */
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+}
+
+/* Завдання 4: Кнопка поверх зображення */
+.banner {
+    position: relative;
+    width: 500px;
+    margin: 20px;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.banner-button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Завдання 5: Кнопка «Допомога» (position: fixed) */
+.help {
+    position: fixed; /* Залишається на місці під час прокрутки сторінки */
+    right: 20px;
+    bottom: 20px;
+    padding: 15px 25px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+/* Завдання 8: Накладання двох елементів (z-index) */
+.layers {
+    position: relative;
+    height: 250px;
+    border: 2px dashed #333;
+    margin: 20px;
+    width: 400px;
+}
+
+.box1 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 150px;
+    height: 100px;
+    background-color: orange;
+    z-index: 1; /* Нижчий шар */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2 {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    width: 150px;
+    height: 100px;
+    background-color: purple;
+    color: white;
+    z-index: 2; /* Вищий шар (перекриває box1) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
