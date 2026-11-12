@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="НОВА — навчальний макет інформаційного порталу з адаптивною сіткою CSS Grid.">
+  <title>НОВА — інформаційний портал</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="НОВА — на головну">
+        <span class="brand-symbol" aria-hidden="true">✳</span>
+        НОВА<span class="brand-dot">.</span>
+      </a>
+      <nav class="navigation" aria-label="Основна навігація">
+        <a class="nav-link active" href="#home">Головна</a>
+        <a class="nav-link" href="#technologies">Технології</a>
+        <a class="nav-link" href="#travel">Подорожі</a>
+        <a class="nav-link" href="#science">Наука</a>
+        <a class="nav-link" href="#ecology">Екологія</a>
+      </nav>
+      <a class="header-action" href="#about">Про портал <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="home" class="container page-main">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-copy">
+        <div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> ІНФОРМАЦІЙНИЙ ПОРТАЛ · НОВИЙ ПОГЛЯД</div>
+        <h1 id="page-title">Ідеї, що <em>рухають</em> світ.</h1>
+        <p>Технології, наука, культура та відкриття — усе цікаве в одному місці.</p>
+      </div>
+      <div class="intro-decoration" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="intro-star">✳</div>
+      </div>
+    </section>
+
+    <div class="page-grid">
+      <section class="main-content" aria-labelledby="latest-heading">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">ДОБІРКА РЕДАКЦІЇ</span>
+            <h2 id="latest-heading">Головні матеріали<span class="heading-dot">.</span></h2>
+          </div>
+          <span class="article-counter">09 МАТЕРІАЛІВ</span>
+        </div>
+
+        <div class="news-grid">
+          <!-- Головна новина займає 2 колонки та 2 рядки CSS Grid. -->
+          <article class="featured-card" id="featured">
+            <img class="featured-image" src="images/city.svg" alt="Сучасне місто з високими будівлями, зеленими зонами та сонцем">
+            <div class="featured-overlay"></div>
+            <div class="featured-content">
+              <span class="feature-tag">ГОЛОВНА ТЕМА</span>
+              <div class="featured-bottom">
+                <span class="article-category light">МІСТО МАЙБУТНЬОГО</span>
+                <h3>Місто, в якому хочеться жити: яким буде наше завтра?</h3>
+                <p>Нові простори, розумні рішення та більше природи у великих містах.</p>
+                <span class="featured-meta">5 хв читання <span aria-hidden="true">·</span> Спецпроєкт</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card" id="technologies">
+            <div class="card-media"><img src="images/robot.svg" alt="Ілюстрація дружнього робота та цифрових інтерфейсів"></div>
+            <div class="card-body"><span class="article-category">ТЕХНОЛОГІЇ</span><h3>Штучний інтелект у звичайному житті</h3><p>Інструменти, що допомагають навчатися й творити.</p><span class="reading-time">4 хв читання</span></div>
+          </article>
+          <article class="news-card" id="solar">
+            <div class="card-media"><img src="images/solar.svg" alt="Сонячні панелі на тлі сонячного неба"></div>
+            <div class="card-body"><span class="article-category">ЕНЕРГІЯ</span><h3>Сонячна енергія: крок до змін</h3><p>Як чиста енергетика стає частиною майбутнього.</p><span class="reading-time">3 хв читання</span></div>
+          </article>
+          <article class="news-card" id="travel">
+            <div class="card-media"><img src="images/travel.svg" alt="Гірський краєвид із озером і сонцем"></div>
+            <div class="card-body"><span class="article-category">ПОДОРОЖІ</span><h3>Незвичайні маршрути на вихідні</h3><p>Натхнення для маленьких пригод поруч із домом.</p><span class="reading-time">5 хв читання</span></div>
+          </article>
+          <article class="news-card" id="books">
+            <div class="card-media"><img src="images/books.svg" alt="Стос книжок, чашка та кімнатна рослина"></div>
+            <div class="card-body"><span class="article-category">КУЛЬТУРА</span><h3>Як повернути читання у свій день</h3><p>Прості звички, що залишають час для книжок.</p><span class="reading-time">4 хв читання</span></div>
+          </article>
+          <article class="news-card" id="science">
+            <div class="card-media"><img src="images/science.svg" alt="Наукова колба та атомна модель"></div>
+            <div class="card-body"><span class="article-category">НАУКА</span><h3>Великі відкриття починаються з питань</h3><p>Чому цікавість — головний інструмент дослідника.</p><span class="reading-time">6 хв читання</span></div>
+          </article>
+          <article class="news-card" id="space">
+            <div class="card-media"><img src="images/space.svg" alt="Планети, зорі та космічний простір"></div>
+            <div class="card-body"><span class="article-category">КОСМОС</span><h3>Дивовижні світи за межами Землі</h3><p>Погляд на планети й загадки далекого Всесвіту.</p><span class="reading-time">5 хв читання</span></div>
+          </article>
+          <article class="news-card" id="ecology">
+            <div class="card-media"><img src="images/ecology.svg" alt="Зелені пагорби й вітряки"></div>
+            <div class="card-body"><span class="article-category">ЕКОЛОГІЯ</span><h3>Маленькі екозвички — великий результат</h3><p>Ідеї для більш свідомого повсякденного життя.</p><span class="reading-time">3 хв читання</span></div>
+          </article>
+          <article class="news-card" id="food">
+            <div class="card-media"><img src="images/food.svg" alt="Тарілка зі свіжими овочами"></div>
+            <div class="card-body"><span class="article-category">СТИЛЬ ЖИТТЯ</span><h3>Смачні ідеї для збалансованого меню</h3><p>Більше кольорів, сезонних продуктів та натхнення.</p><span class="reading-time">4 хв читання</span></div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="sidebar" aria-label="Додаткові матеріали">
+        <div class="sidebar-title"><span class="sidebar-icon">✳</span> ЦІКАВЕ ПОРУЧ</div>
+        <section class="side-panel" aria-labelledby="popular-heading">
+          <div class="panel-topline"><h2 id="popular-heading">Популярне</h2><span class="panel-sparkle">↗</span></div>
+          <ol class="popular-list">
+            <li><a href="#technologies"><span class="popular-number">01</span><span>Як технології змінюють наші звички <small>Технології · 4 хв</small></span></a></li>
+            <li><a href="#travel"><span class="popular-number">02</span><span>Ідеї для нових подорожей <small>Подорожі · 5 хв</small></span></a></li>
+            <li><a href="#science"><span class="popular-number">03</span><span>Цікаві відкриття сучасної науки <small>Наука · 6 хв</small></span></a></li>
+            <li><a href="#ecology"><span class="popular-number">04</span><span>Прості звички на користь природі <small>Екологія · 3 хв</small></span></a></li>
+          </ol>
+        </section>
+
+        <section class="side-feature" aria-labelledby="note-heading">
+          <span class="side-feature-symbol" aria-hidden="true">✦</span>
+          <span class="side-feature-kicker">ЦІКАВА ДУМКА</span>
+          <h2 id="note-heading">Майбутнє створюють допитливі.</h2>
+          <p>Знайомся з ідеями, став запитання та знаходь власні відповіді.</p>
+          <a href="#about" class="side-feature-link">Дізнатися більше <span aria-hidden="true">→</span></a>
+        </section>
+        <section class="side-panel categories-panel" aria-labelledby="categories-heading">
+          <h2 id="categories-heading">Рубрики</h2>
+          <div class="category-links"><a href="#technologies">Технології <span>↗</span></a><a href="#travel">Подорожі <span>↗</span></a><a href="#science">Наука <span>↗</span></a><a href="#ecology">Екологія <span>↗</span></a></div>
+        </section>
+      </aside>
+    </div>
+
+    <section class="bottom-banner" id="about" aria-label="Інформація про сайт">
+      <div><span class="bottom-caption">ПРО ПРОЄКТ</span><h2>Світ цікавіший, ніж здається.</h2><p>Навчальний приклад інформаційного порталу, створений за допомогою HTML і CSS Grid.</p></div>
+      <span class="banner-art" aria-hidden="true">✳</span>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner"><a href="#home" class="footer-brand">НОВА<span>.</span></a><span>© 2026 · Навчальний проєкт з CSS Grid</span><a href="#home">Повернутися нагору ↑</a></div>
+  </footer>
+</body>
+</html>
